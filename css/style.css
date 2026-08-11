@@ -401,6 +401,15 @@ ol {
   margin-bottom: 0.75rem;
 }
 
+.case-section h3 {
+  font-size: 1.05rem;
+  margin: 1.75rem 0 0.5rem;
+}
+
+.case-section h3:first-of-type {
+  margin-top: 0;
+}
+
 .case-section p {
   color: var(--muted);
   max-width: 70ch;

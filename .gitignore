@@ -3,3 +3,6 @@ Thumbs.db
 
 # Cópia de trabalho do currículo na raiz — a versão publicada no site vive em assets/
 /CV-NatashaLemosFerreira.pdf
+
+# PDFs de case usados só como fonte de conteúdo para as páginas de projeto
+/Case *.pdf
