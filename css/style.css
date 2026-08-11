@@ -1,0 +1,435 @@
+/* ===================================================================
+   Design tokens
+   =================================================================== */
+:root {
+  --bg: #f4f2ec;
+  --text: #17160f;
+  --muted: #6f6d64;
+  --accent: #3c6e47;
+  --border: #dedad0;
+  --maxw: 880px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+  line-height: 1.55;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Esconde o idioma que não está ativo (ver js/main.js) */
+.i18n[hidden] {
+  display: none;
+}
+
+/* ===================================================================
+   Navegação fixa nos cantos
+   =================================================================== */
+.corner-nav .corner {
+  position: fixed;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.corner--top-left {
+  top: 1.5rem;
+  left: 1.5rem;
+}
+
+.corner--top-right {
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.corner--bottom-left {
+  bottom: 1.5rem;
+  left: 1.5rem;
+}
+
+.corner--bottom-right {
+  bottom: 1.5rem;
+  right: 1.5rem;
+}
+
+.corner--bottom-left a,
+.corner--bottom-right a {
+  text-decoration: none;
+}
+
+.corner--bottom-left a:hover,
+.corner--bottom-right a:hover {
+  color: var(--accent);
+}
+
+.status-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+
+.lang-toggle {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.lang-btn {
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.lang-btn.is-active {
+  border-color: var(--text);
+  color: var(--text);
+}
+
+/* Em telas pequenas, os cantos viram uma barra fixa no topo */
+@media (max-width: 640px) {
+  .corner-nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.75rem 1rem;
+    padding: 1rem 1.25rem;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .corner-nav .corner {
+    position: static;
+  }
+}
+
+/* ===================================================================
+   Seções gerais
+   =================================================================== */
+.section {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+}
+
+/* ===================================================================
+   Hero
+   =================================================================== */
+.hero {
+  min-height: 100svh;
+  max-width: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding-left: clamp(1.5rem, 6vw, 6rem);
+  padding-right: clamp(1.5rem, 6vw, 6rem);
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 800;
+  max-width: 22ch;
+}
+
+.hero__subtitle {
+  color: var(--muted);
+  font-size: clamp(1rem, 2.2vw, 1.25rem);
+  max-width: 45ch;
+}
+
+.scroll-hint {
+  margin-top: 1.5rem;
+  border: none;
+  background: none;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+}
+
+/* ===================================================================
+   Selected work
+   =================================================================== */
+.work__list li {
+  border-top: 1px solid var(--border);
+}
+
+.work__list li:last-child {
+  border-bottom: 1px solid var(--border);
+}
+
+.work__list a {
+  display: block;
+  padding: 1.5rem 0;
+  font-size: clamp(1.5rem, 6vw, 3rem);
+  font-weight: 800;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.work__list a:hover {
+  opacity: 0.5;
+}
+
+/* ===================================================================
+   About
+   =================================================================== */
+.about__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.about h2,
+.about h3 {
+  margin-bottom: 1rem;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag-list li {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.85rem;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid var(--text);
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.button:hover {
+  background: var(--text);
+  color: var(--bg);
+}
+
+/* ===================================================================
+   Experience
+   =================================================================== */
+.experience h2 {
+  margin-bottom: 2rem;
+}
+
+.timeline li {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 0;
+}
+
+.timeline__role {
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.timeline__desc {
+  color: var(--muted);
+}
+
+/* ===================================================================
+   Contact
+   =================================================================== */
+.contact h2 {
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  margin: 0.5rem 0;
+}
+
+.contact a {
+  text-decoration: underline;
+}
+
+/* ===================================================================
+   Footer
+   =================================================================== */
+.footer {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+/* ===================================================================
+   Página de case study (projetos/*.html)
+   =================================================================== */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: 6rem auto 0;
+  max-width: var(--maxw);
+  padding: 0 1.5rem;
+}
+
+.back-link:hover {
+  color: var(--text);
+}
+
+@media (max-width: 640px) {
+  .back-link {
+    margin-top: 1.5rem;
+  }
+}
+
+.case-header {
+  padding-top: 2rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tag {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+
+.case-header h1 {
+  font-size: clamp(1.75rem, 5vw, 3rem);
+  margin-bottom: 1rem;
+}
+
+.case-header .subtitle {
+  color: var(--muted);
+  font-size: 1.1rem;
+  max-width: 60ch;
+}
+
+.meta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+  margin: 2.5rem 0 0;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.meta-grid dt {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  margin-bottom: 0.35rem;
+}
+
+.meta-grid dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+.case-section h2 {
+  font-size: 1.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.case-section p {
+  color: var(--muted);
+  max-width: 70ch;
+}
+
+.case-section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--muted);
+}
+
+.case-section ul li::before {
+  content: "— ";
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 2rem;
+}
+
+.stats-grid strong {
+  display: block;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 800;
+}
+
+.stats-grid span {
+  color: var(--muted);
+  font-size: 0.85rem;
+}

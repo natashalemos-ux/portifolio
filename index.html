@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>[Seu Nome] · Product Designer</title>
+  <meta name="description" content="[Uma frase curta descrevendo quem você é e o que você faz, para aparecer em buscadores e ao compartilhar o link.]" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="corner-nav">
+    <div class="corner corner--top-left">
+      <span class="status-dot" aria-hidden="true"></span>
+      <span class="i18n" data-lang="pt">Disponível para novos projetos</span>
+      <span class="i18n" data-lang="en" hidden>Available for new projects</span>
+    </div>
+
+    <div class="corner corner--top-right lang-toggle" role="group" aria-label="Idioma / Language">
+      <button type="button" class="lang-btn is-active" data-lang="pt" aria-pressed="true">PT</button>
+      <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+
+    <nav class="corner corner--bottom-left">
+      <a href="#about">
+        <span class="i18n" data-lang="pt">Sobre</span>
+        <span class="i18n" data-lang="en" hidden>About</span>
+      </a>
+    </nav>
+
+    <nav class="corner corner--bottom-right">
+      <a href="#contact">
+        <span class="i18n" data-lang="pt">Contato</span>
+        <span class="i18n" data-lang="en" hidden>Contact</span>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================= HERO ============================= -->
+    <section id="hero" class="section hero">
+      <h1>
+        <span class="i18n" data-lang="pt">Oi, eu sou <strong>[Seu Nome]</strong> 👋</span>
+        <span class="i18n" data-lang="en" hidden>Hi, I'm <strong>[Your Name]</strong> 👋</span>
+      </h1>
+      <p class="hero__subtitle">
+        <span class="i18n" data-lang="pt">[Uma frase curta sobre o que você faz e o valor que você entrega nos produtos em que trabalha.]</span>
+        <span class="i18n" data-lang="en" hidden>[A short sentence about what you do and the value you bring to the products you work on.]</span>
+      </p>
+      <button type="button" class="scroll-hint" data-scroll-target="#work">
+        <span>
+          <span class="i18n" data-lang="pt">Rolar</span>
+          <span class="i18n" data-lang="en" hidden>Scroll</span>
+        </span>
+        <span aria-hidden="true">↓</span>
+      </button>
+    </section>
+
+    <!-- ======================= SELECTED WORK ======================== -->
+    <section id="work" class="section work">
+      <h2>
+        <span class="i18n" data-lang="pt">Projetos selecionados</span>
+        <span class="i18n" data-lang="en" hidden>Selected work</span>
+      </h2>
+
+      <ul class="work__list">
+        <!-- Duplique este <li> para cada novo projeto e ajuste o href e os textos -->
+        <li>
+          <a href="projetos/projeto-exemplo.html">
+            <span class="i18n" data-lang="pt">Nome do Projeto</span>
+            <span class="i18n" data-lang="en" hidden>Project Name</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============================ ABOUT ============================ -->
+    <section id="about" class="section about">
+      <h2>
+        <span class="i18n" data-lang="pt">Sobre</span>
+        <span class="i18n" data-lang="en" hidden>About</span>
+      </h2>
+      <p>
+        <span class="i18n" data-lang="pt">[Parágrafo curto contando sua trajetória, quantos anos de experiência você tem, mercados/setores em que atuou e o que te diferencia como Product Designer.]</span>
+        <span class="i18n" data-lang="en" hidden>[Short paragraph about your background, years of experience, markets/industries you've worked in, and what sets you apart as a Product Designer.]</span>
+      </p>
+
+      <div class="about__grid">
+        <div>
+          <h3>
+            <span class="i18n" data-lang="pt">Especialidades</span>
+            <span class="i18n" data-lang="en" hidden>Specialties</span>
+          </h3>
+          <ul class="tag-list">
+            <!-- Duplique/edite os itens abaixo -->
+            <li><span class="i18n" data-lang="pt">[Especialidade 1]</span><span class="i18n" data-lang="en" hidden>[Specialty 1]</span></li>
+            <li><span class="i18n" data-lang="pt">[Especialidade 2]</span><span class="i18n" data-lang="en" hidden>[Specialty 2]</span></li>
+            <li><span class="i18n" data-lang="pt">[Especialidade 3]</span><span class="i18n" data-lang="en" hidden>[Specialty 3]</span></li>
+            <li><span class="i18n" data-lang="pt">[Especialidade 4]</span><span class="i18n" data-lang="en" hidden>[Specialty 4]</span></li>
+            <li><span class="i18n" data-lang="pt">[Especialidade 5]</span><span class="i18n" data-lang="en" hidden>[Specialty 5]</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>
+            <span class="i18n" data-lang="pt">Ferramentas</span>
+            <span class="i18n" data-lang="en" hidden>Tools</span>
+          </h3>
+          <ul class="tag-list">
+            <li><span class="i18n" data-lang="pt">[Ferramenta 1]</span><span class="i18n" data-lang="en" hidden>[Tool 1]</span></li>
+            <li><span class="i18n" data-lang="pt">[Ferramenta 2]</span><span class="i18n" data-lang="en" hidden>[Tool 2]</span></li>
+            <li><span class="i18n" data-lang="pt">[Ferramenta 3]</span><span class="i18n" data-lang="en" hidden>[Tool 3]</span></li>
+            <li><span class="i18n" data-lang="pt">[Ferramenta 4]</span><span class="i18n" data-lang="en" hidden>[Tool 4]</span></li>
+            <li><span class="i18n" data-lang="pt">[Ferramenta 5]</span><span class="i18n" data-lang="en" hidden>[Tool 5]</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Troque o href pelo caminho do seu currículo em assets/, ex: assets/curriculo.pdf -->
+      <a class="button" href="#" download>
+        <span class="i18n" data-lang="pt">Baixar currículo</span>
+        <span class="i18n" data-lang="en" hidden>Download CV</span>
+      </a>
+    </section>
+
+    <!-- ========================= EXPERIENCE ========================== -->
+    <section id="experience" class="section experience">
+      <h2>
+        <span class="i18n" data-lang="pt">Experiência</span>
+        <span class="i18n" data-lang="en" hidden>Experience</span>
+      </h2>
+
+      <ol class="timeline">
+        <!-- Duplique este <li> para cada experiência, da mais recente para a mais antiga -->
+        <li>
+          <p class="timeline__role">
+            <span class="i18n" data-lang="pt">[Cargo] · [Empresa] · [Local] · [Datas]</span>
+            <span class="i18n" data-lang="en" hidden>[Role] · [Company] · [Location] · [Dates]</span>
+          </p>
+          <p class="timeline__desc">
+            <span class="i18n" data-lang="pt">[Breve descrição do que você fez e entregou nesse período.]</span>
+            <span class="i18n" data-lang="en" hidden>[Brief description of what you did and delivered during this time.]</span>
+          </p>
+        </li>
+        <li>
+          <p class="timeline__role">
+            <span class="i18n" data-lang="pt">[Cargo] · [Empresa] · [Local] · [Datas]</span>
+            <span class="i18n" data-lang="en" hidden>[Role] · [Company] · [Location] · [Dates]</span>
+          </p>
+          <p class="timeline__desc">
+            <span class="i18n" data-lang="pt">[Breve descrição do que você fez e entregou nesse período.]</span>
+            <span class="i18n" data-lang="en" hidden>[Brief description of what you did and delivered during this time.]</span>
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- =========================== CONTACT ============================ -->
+    <section id="contact" class="section contact">
+      <h2>
+        <span class="i18n" data-lang="pt">Contato</span>
+        <span class="i18n" data-lang="en" hidden>Contact</span>
+      </h2>
+      <p><a href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a></p>
+      <p><a href="https://www.linkedin.com/in/seu-usuario/" target="_blank" rel="noopener">LinkedIn</a></p>
+      <p>
+        <span class="i18n" data-lang="pt">[Sua cidade, país]</span>
+        <span class="i18n" data-lang="en" hidden>[Your city, country]</span>
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>
+      &copy; <span id="year"></span> [Seu Nome] ·
+      <span class="i18n" data-lang="pt">Feito com cuidado</span>
+      <span class="i18n" data-lang="en" hidden>Made with care</span>
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
