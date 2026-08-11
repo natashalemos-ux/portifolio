@@ -83,22 +83,17 @@ ol {
   -webkit-backdrop-filter: blur(10px);
 }
 
-.site-nav__status {
+.site-nav__logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+  line-height: 0;
 }
 
-.status-dot {
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 50%;
-  background: var(--accent);
-  flex-shrink: 0;
+.site-nav__logo img {
+  display: block;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
 }
 
 .site-nav__links {
