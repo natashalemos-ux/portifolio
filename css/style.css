@@ -55,11 +55,35 @@ ol {
 }
 
 /* ===================================================================
-   Navegação fixa nos cantos
+   Navegação fixa no topo
    =================================================================== */
-.corner-nav .corner {
+.site-nav {
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  transition: background-color 0.25s ease, border-color 0.25s ease,
+    backdrop-filter 0.25s ease;
+}
+
+/* Enquanto a página está no topo, o header fica transparente sobre o hero.
+   Ao rolar, js/main.js adiciona esta classe e ele vira um vidro fosco. */
+.site-nav.is-scrolled {
+  background: rgba(244, 242, 236, 0.75);
+  border-bottom-color: var(--border);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.site-nav__status {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -69,42 +93,28 @@ ol {
   letter-spacing: 0.04em;
 }
 
-.corner--top-left {
-  top: 1.5rem;
-  left: 1.5rem;
-}
-
-.corner--top-right {
-  top: 1.5rem;
-  right: 1.5rem;
-}
-
-.corner--bottom-left {
-  bottom: 1.5rem;
-  left: 1.5rem;
-}
-
-.corner--bottom-right {
-  bottom: 1.5rem;
-  right: 1.5rem;
-}
-
-.corner--bottom-left a,
-.corner--bottom-right a {
-  text-decoration: none;
-}
-
-.corner--bottom-left a:hover,
-.corner--bottom-right a:hover {
-  color: var(--accent);
-}
-
 .status-dot {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
   background: var(--accent);
   flex-shrink: 0;
+}
+
+.site-nav__links {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.site-nav__links a {
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.site-nav__links a:hover {
+  color: var(--accent);
 }
 
 .lang-toggle {
@@ -131,23 +141,14 @@ ol {
   color: var(--text);
 }
 
-/* Em telas pequenas, os cantos viram uma barra fixa no topo */
 @media (max-width: 640px) {
-  .corner-nav {
-    position: sticky;
-    top: 0;
-    z-index: 50;
-    display: flex;
+  .site-nav {
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 0.75rem 1rem;
     padding: 1rem 1.25rem;
-    background: var(--bg);
-    border-bottom: 1px solid var(--border);
   }
 
-  .corner-nav .corner {
-    position: static;
+  .site-nav__links {
+    gap: 1rem;
   }
 }
 
@@ -158,6 +159,7 @@ ol {
   max-width: var(--maxw);
   margin: 0 auto;
   padding: 5rem 1.5rem;
+  scroll-margin-top: 5rem;
 }
 
 /* ===================================================================

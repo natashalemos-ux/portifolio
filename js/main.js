@@ -53,9 +53,22 @@
     if (el) el.textContent = new Date().getFullYear();
   }
 
+  function initNavBlur() {
+    var nav = document.querySelector(".site-nav");
+    if (!nav) return;
+
+    function updateNav() {
+      nav.classList.toggle("is-scrolled", window.scrollY > 10);
+    }
+
+    updateNav();
+    window.addEventListener("scroll", updateNav, { passive: true });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     initLanguage();
     initScrollHint();
     initYear();
+    initNavBlur();
   });
 })();

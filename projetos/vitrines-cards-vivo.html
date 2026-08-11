@@ -10,30 +10,26 @@
 </head>
 <body>
 
-  <header class="corner-nav">
-    <div class="corner corner--top-left">
+  <header class="site-nav" id="siteNav">
+    <div class="site-nav__status">
       <span class="status-dot" aria-hidden="true"></span>
       <span class="i18n" data-lang="pt">Disponível para novos projetos</span>
       <span class="i18n" data-lang="en" hidden>Available for new projects</span>
     </div>
 
-    <div class="corner corner--top-right lang-toggle" role="group" aria-label="Idioma / Language">
-      <button type="button" class="lang-btn is-active" data-lang="pt" aria-pressed="true">PT</button>
-      <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
-    </div>
-
-    <nav class="corner corner--bottom-left">
+    <nav class="site-nav__links">
       <a href="../index.html#about">
         <span class="i18n" data-lang="pt">Sobre</span>
         <span class="i18n" data-lang="en" hidden>About</span>
       </a>
-    </nav>
-
-    <nav class="corner corner--bottom-right">
       <a href="../index.html#contact">
         <span class="i18n" data-lang="pt">Contato</span>
         <span class="i18n" data-lang="en" hidden>Contact</span>
       </a>
+      <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+        <button type="button" class="lang-btn is-active" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
     </nav>
   </header>
 
