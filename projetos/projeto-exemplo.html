@@ -23,18 +23,24 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="../css/style.css" />
 </head>
-<body>
+<body id="topo">
 
   <!--
     MODELO DE PÁGINA DE PROJETO (case study)
 
+    A estrutura abaixo segue a mesma ordem dos cases em PDF:
+    Contexto → Problema → Objetivo → Meu papel → (Iniciativas) →
+    metadados (Time / Duração / Ano) → imagens → O processo → Resultado.
+
     Para adicionar um novo projeto:
     1. Duplique este arquivo e renomeie (ex: projetos/nome-do-projeto.html).
     2. Edite os textos entre colchetes [assim], em português e inglês.
-    3. Adicione/remova seções conforme a necessidade do case (nem todo
-       projeto precisa de todas as seções abaixo).
-    4. Volte no index.html e adicione um <li> novo na seção "Selected work"
-       apontando para o novo arquivo.
+    3. Coloque as imagens em assets/projetos/nome-do-projeto/ e ajuste os
+       caminhos dos <img>.
+    4. Remova as seções que o case não tiver (nem todo projeto tem
+       "Iniciativas", por exemplo).
+    5. Volte no index.html e duplique um <li class="work-card"> da seção
+       "Projetos selecionados" apontando para o novo arquivo.
   -->
 
   <header class="site-nav" id="siteNav">
@@ -43,13 +49,14 @@
     </a>
 
     <nav class="site-nav__links">
-      <a href="../index.html#about">
-        <span class="i18n" data-lang="pt">Sobre</span>
-        <span class="i18n" data-lang="en" hidden>About</span>
+      <a href="../index.html#work">
+        <span class="i18n" data-lang="pt">Outros trabalhos</span>
+        <span class="i18n" data-lang="en" hidden>Other work</span>
       </a>
-      <a href="../index.html#contact">
-        <span class="i18n" data-lang="pt">Contato</span>
-        <span class="i18n" data-lang="en" hidden>Contact</span>
+      <a href="https://www.linkedin.com/in/natashalemos/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="../assets/CV-NatashaLemosFerreira.pdf" download>
+        <span class="i18n" data-lang="pt">Currículo</span>
+        <span class="i18n" data-lang="en" hidden>Resume</span>
       </a>
       <div class="lang-toggle" role="group" aria-label="Idioma / Language">
         <button type="button" class="lang-btn is-active" data-lang="pt" aria-pressed="true">PT</button>
@@ -67,16 +74,7 @@
 
     <!-- ========================= CABEÇALHO ========================= -->
     <header class="section case-header">
-      <div class="tags">
-        <span class="tag">
-          <span class="i18n" data-lang="pt">[Categoria, ex: Discovery Estratégico]</span>
-          <span class="i18n" data-lang="en" hidden>[Category, e.g. Strategic Discovery]</span>
-        </span>
-        <span class="tag">
-          <span class="i18n" data-lang="pt">[Tipo de produto, ex: App Mobile]</span>
-          <span class="i18n" data-lang="en" hidden>[Product type, e.g. Mobile App]</span>
-        </span>
-      </div>
+      <p class="case-company">[Empresa]</p>
 
       <h1>
         <span class="i18n" data-lang="pt">[Nome do Projeto]</span>
@@ -84,118 +82,192 @@
       </h1>
 
       <p class="subtitle">
-        <span class="i18n" data-lang="pt">[Uma frase resumindo o desafio do projeto e o impacto que sua solução teve.]</span>
-        <span class="i18n" data-lang="en" hidden>[A sentence summarizing the project's challenge and the impact of your solution.]</span>
+        <span class="i18n" data-lang="pt">[Uma frase resumindo o valor que a solução entregou]</span>
+        <span class="i18n" data-lang="en" hidden>[A sentence summarizing the value the solution delivered]</span>
       </p>
-
-      <dl class="meta-grid">
-        <div>
-          <dt>
-            <span class="i18n" data-lang="pt">Período</span>
-            <span class="i18n" data-lang="en" hidden>Timeframe</span>
-          </dt>
-          <dd>
-            <span class="i18n" data-lang="pt">[Mês/Ano – Mês/Ano]</span>
-            <span class="i18n" data-lang="en" hidden>[Month/Year – Month/Year]</span>
-          </dd>
-        </div>
-        <div>
-          <dt>
-            <span class="i18n" data-lang="pt">Papel</span>
-            <span class="i18n" data-lang="en" hidden>Role</span>
-          </dt>
-          <dd>
-            <span class="i18n" data-lang="pt">[Seu cargo no projeto]</span>
-            <span class="i18n" data-lang="en" hidden>[Your role in the project]</span>
-          </dd>
-        </div>
-      </dl>
     </header>
 
-    <!-- ==================== RESPONSABILIDADES ======================= -->
+    <!-- ========================== CONTEXTO ========================== -->
     <section class="section case-section">
       <h2>
-        <span class="i18n" data-lang="pt">Responsabilidades</span>
-        <span class="i18n" data-lang="en" hidden>Responsibilities</span>
-      </h2>
-      <ul>
-        <li><span class="i18n" data-lang="pt">[O que você fez — passo 1]</span><span class="i18n" data-lang="en" hidden>[What you did — step 1]</span></li>
-        <li><span class="i18n" data-lang="pt">[O que você fez — passo 2]</span><span class="i18n" data-lang="en" hidden>[What you did — step 2]</span></li>
-        <li><span class="i18n" data-lang="pt">[O que você fez — passo 3]</span><span class="i18n" data-lang="en" hidden>[What you did — step 3]</span></li>
-      </ul>
-    </section>
-
-    <!-- ===================== NÚMEROS EM DESTAQUE ==================== -->
-    <section class="section">
-      <div class="stats-grid">
-        <div>
-          <strong>[Nº]</strong>
-          <span>
-            <span class="i18n" data-lang="pt">[O que esse número representa]</span>
-            <span class="i18n" data-lang="en" hidden>[What this number represents]</span>
-          </span>
-        </div>
-        <div>
-          <strong>[Nº]</strong>
-          <span>
-            <span class="i18n" data-lang="pt">[O que esse número representa]</span>
-            <span class="i18n" data-lang="en" hidden>[What this number represents]</span>
-          </span>
-        </div>
-        <div>
-          <strong>[Nº]</strong>
-          <span>
-            <span class="i18n" data-lang="pt">[O que esse número representa]</span>
-            <span class="i18n" data-lang="en" hidden>[What this number represents]</span>
-          </span>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================ TEXTO ============================ -->
-    <section class="section case-section">
-      <h2>
-        <span class="i18n" data-lang="pt">O problema</span>
-        <span class="i18n" data-lang="en" hidden>The problem</span>
+        <span class="i18n" data-lang="pt">Contexto</span>
+        <span class="i18n" data-lang="en" hidden>Context</span>
       </h2>
       <p>
-        <span class="i18n" data-lang="pt">[Descreva o contexto e o problema de negócio ou de usuário que motivou o projeto.]</span>
-        <span class="i18n" data-lang="en" hidden>[Describe the context and the business or user problem that motivated the project.]</span>
+        <span class="i18n" data-lang="pt">[Cenário da empresa/produto e o que motivou o projeto.]</span>
+        <span class="i18n" data-lang="en" hidden>[The company/product scenario and what prompted the project.]</span>
       </p>
     </section>
 
+    <!-- ========================== PROBLEMA ========================== -->
+    <section class="section case-section">
+      <h2>
+        <span class="i18n" data-lang="pt">Problema</span>
+        <span class="i18n" data-lang="en" hidden>Problem</span>
+      </h2>
+      <p>
+        <span class="i18n" data-lang="pt">[A dor concreta que as pessoas usuárias enfrentavam.]</span>
+        <span class="i18n" data-lang="en" hidden>[The concrete pain users were facing.]</span>
+      </p>
+    </section>
+
+    <!-- ========================== OBJETIVO ========================== -->
+    <section class="section case-section">
+      <h2>
+        <span class="i18n" data-lang="pt">Objetivo</span>
+        <span class="i18n" data-lang="en" hidden>Goal</span>
+      </h2>
+      <p>
+        <span class="i18n" data-lang="pt">[O que o projeto se propôs a resolver e sob quais restrições.]</span>
+        <span class="i18n" data-lang="en" hidden>[What the project set out to solve, and under which constraints.]</span>
+      </p>
+    </section>
+
+    <!-- ========================= MEU PAPEL ========================== -->
+    <section class="section case-section">
+      <h2>
+        <span class="i18n" data-lang="pt">Meu papel</span>
+        <span class="i18n" data-lang="en" hidden>My role</span>
+      </h2>
+      <p>
+        <span class="i18n" data-lang="pt">[Seu papel no time e por quais entregas você foi responsável.]</span>
+        <span class="i18n" data-lang="en" hidden>[Your role on the team and which deliverables you owned.]</span>
+      </p>
+
+      <!-- Remova os blocos que não se aplicarem (ex: "Time", em projetos solo) -->
+      <dl class="meta-grid">
+        <div>
+          <dt>Time</dt>
+          <dd>
+            <span class="i18n" data-lang="pt">[Composição do time]</span>
+            <span class="i18n" data-lang="en" hidden>[Team composition]</span>
+          </dd>
+        </div>
+        <div>
+          <dt>
+            <span class="i18n" data-lang="pt">Duração</span>
+            <span class="i18n" data-lang="en" hidden>Duration</span>
+          </dt>
+          <dd>
+            <span class="i18n" data-lang="pt">[Ex: 4 meses]</span>
+            <span class="i18n" data-lang="en" hidden>[e.g. 4 months]</span>
+          </dd>
+        </div>
+        <div>
+          <dt>
+            <span class="i18n" data-lang="pt">Ano</span>
+            <span class="i18n" data-lang="en" hidden>Year</span>
+          </dt>
+          <dd>[Ano]</dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- ===== TELAS DA SOLUÇÃO (trio lado a lado; remova se não tiver) ==== -->
+    <div class="screens">
+      <figure>
+        <img src="../assets/projetos/[nome-do-projeto]/01.png" alt="[Descrição da tela para leitores de tela]" />
+        <figcaption>
+          <strong>[Nome da tela]</strong>
+          <span class="i18n" data-lang="pt">[O que ela mostra]</span>
+          <span class="i18n" data-lang="en" hidden>[What it shows]</span>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="../assets/projetos/[nome-do-projeto]/02.png" alt="[Descrição da tela para leitores de tela]" />
+        <figcaption>
+          <strong>[Nome da tela]</strong>
+          <span class="i18n" data-lang="pt">[O que ela mostra]</span>
+          <span class="i18n" data-lang="en" hidden>[What it shows]</span>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="../assets/projetos/[nome-do-projeto]/03.png" alt="[Descrição da tela para leitores de tela]" />
+        <figcaption>
+          <strong>[Nome da tela]</strong>
+          <span class="i18n" data-lang="pt">[O que ela mostra]</span>
+          <span class="i18n" data-lang="en" hidden>[What it shows]</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <!-- ========================== O PROCESSO ======================== -->
     <section class="section case-section">
       <h2>
         <span class="i18n" data-lang="pt">O processo</span>
         <span class="i18n" data-lang="en" hidden>The process</span>
       </h2>
+
+      <h3>[Etapa 1, ex: Benchmarking]</h3>
       <p>
-        <span class="i18n" data-lang="pt">[Descreva como você conduziu a investigação, discovery ou o processo de design do projeto.]</span>
-        <span class="i18n" data-lang="en" hidden>[Describe how you conducted the research, discovery, or design process for the project.]</span>
+        <span class="i18n" data-lang="pt">[O que foi feito nessa etapa e por quê.]</span>
+        <span class="i18n" data-lang="en" hidden>[What was done at this stage and why.]</span>
       </p>
     </section>
 
+    <!-- Imagem larga entre etapas (duplique onde precisar) -->
+    <figure class="case-figure">
+      <img src="../assets/projetos/[nome-do-projeto]/04.png" alt="[Descrição da imagem para leitores de tela]" />
+      <figcaption>
+        <span class="i18n" data-lang="pt">[Legenda opcional]</span>
+        <span class="i18n" data-lang="en" hidden>[Optional caption]</span>
+      </figcaption>
+    </figure>
+
     <section class="section case-section">
-      <h2>
-        <span class="i18n" data-lang="pt">A solução</span>
-        <span class="i18n" data-lang="en" hidden>The solution</span>
-      </h2>
+      <h3>[Etapa 2]</h3>
       <p>
-        <span class="i18n" data-lang="pt">[Descreva a solução final e as decisões de design mais importantes. Esse é um bom lugar para imagens/telas, se tiver.]</span>
-        <span class="i18n" data-lang="en" hidden>[Describe the final solution and the most important design decisions. This is a good place for images/screens, if you have them.]</span>
+        <span class="i18n" data-lang="pt">[O que foi feito nessa etapa e por quê.]</span>
+        <span class="i18n" data-lang="en" hidden>[What was done at this stage and why.]</span>
+      </p>
+
+      <h3>
+        <span class="i18n" data-lang="pt">[Etapa 3, ex: Desafios durante o processo]</span>
+        <span class="i18n" data-lang="en" hidden>[Stage 3, e.g. Challenges along the way]</span>
+      </h3>
+      <p>
+        <span class="i18n" data-lang="pt">[O que foi feito nessa etapa e por quê.]</span>
+        <span class="i18n" data-lang="en" hidden>[What was done at this stage and why.]</span>
       </p>
     </section>
 
+    <!-- ========================== RESULTADO ========================= -->
     <section class="section case-section">
       <h2>
-        <span class="i18n" data-lang="pt">O resultado</span>
-        <span class="i18n" data-lang="en" hidden>The result</span>
+        <span class="i18n" data-lang="pt">Resultado</span>
+        <span class="i18n" data-lang="en" hidden>Result</span>
       </h2>
       <p>
-        <span class="i18n" data-lang="pt">[Descreva o impacto: métricas, aprendizados e próximos passos.]</span>
-        <span class="i18n" data-lang="en" hidden>[Describe the impact: metrics, learnings, and next steps.]</span>
+        <span class="i18n" data-lang="pt">[O que foi entregue, o impacto e o que ficou aprendido.]</span>
+        <span class="i18n" data-lang="en" hidden>[What was delivered, the impact, and what was learned.]</span>
       </p>
+
+      <!-- Blocos de métricas (remova se o case não tiver) -->
+      <div class="metrics-grid">
+        <div class="metrics-card">
+          <h3>
+            <span class="i18n" data-lang="pt">[Grupo de métricas]</span>
+            <span class="i18n" data-lang="en" hidden>[Metric group]</span>
+          </h3>
+          <ul>
+            <li>
+              <span class="i18n" data-lang="pt">[Métrica]</span>
+              <span class="i18n" data-lang="en" hidden>[Metric]</span>
+            </li>
+            <li>
+              <span class="i18n" data-lang="pt">[Métrica]</span>
+              <span class="i18n" data-lang="en" hidden>[Metric]</span>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
+
+    <a class="to-top" href="#topo">
+      <span aria-hidden="true">↑</span>
+      <span class="i18n" data-lang="pt">Voltar para o topo</span>
+      <span class="i18n" data-lang="en" hidden>Back to top</span>
+    </a>
   </main>
 
   <footer class="footer">
