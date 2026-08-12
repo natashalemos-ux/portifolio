@@ -11,3 +11,7 @@ Thumbs.db
 # assets/projetos/<projeto>/
 /favoritos zn/
 /vitrines e cards/
+
+# Capas em tamanho original — as versões otimizadas vivem em
+# assets/projetos/<projeto>/capa.png
+/capa-*.png
