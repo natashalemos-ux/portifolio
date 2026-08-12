@@ -6,3 +6,8 @@ Thumbs.db
 
 # PDFs de case usados só como fonte de conteúdo para as páginas de projeto
 /Case *.pdf
+
+# Pastas originais das imagens dos cases — as versões publicadas vivem em
+# assets/projetos/<projeto>/
+/favoritos zn/
+/vitrines e cards/

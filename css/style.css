@@ -504,6 +504,14 @@ ol {
 
 .case-header {
   padding-top: 2rem;
+  padding-bottom: 3.5rem;
+}
+
+/* As seções do case ficam mais próximas entre si do que as da home,
+   para o texto ser lido como um documento contínuo. */
+.case-section {
+  padding-top: 0;
+  padding-bottom: 3rem;
 }
 
 .tags {
@@ -576,6 +584,10 @@ ol {
   max-width: 70ch;
 }
 
+.case-section p + p {
+  margin-top: 1rem;
+}
+
 .case-section ul {
   display: flex;
   flex-direction: column;
@@ -604,4 +616,116 @@ ol {
 .stats-grid span {
   color: var(--muted);
   font-size: 0.85rem;
+}
+
+/* Nome da empresa acima do título do case */
+.case-header .case-company {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+/* Imagens dos cases
+   ------------------------------------------------------------------ */
+.case-figure {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+}
+
+.case-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.case-figure figcaption {
+  margin-top: 0.75rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+/* Trio de telas de celular, lado a lado */
+.screens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+}
+
+.screens figure {
+  margin: 0;
+}
+
+.screens img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+}
+
+.screens figcaption {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.screens figcaption strong {
+  display: block;
+  color: var(--text);
+  font-weight: 700;
+  margin-bottom: 0.15rem;
+}
+
+/* Blocos de métricas (ex.: "como medimos o sucesso") */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.metrics-card {
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.metrics-card h3 {
+  font-size: 0.95rem;
+  margin: 0 0 0.75rem;
+}
+
+.metrics-card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.metrics-card ul li::before {
+  content: "— ";
+}
+
+/* Link "voltar ao topo" no fim do case */
+.to-top {
+  display: block;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 1.5rem 5rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.to-top:hover {
+  color: var(--accent);
 }

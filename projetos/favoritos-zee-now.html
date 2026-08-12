@@ -22,7 +22,7 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="../css/style.css" />
 </head>
-<body>
+<body id="topo">
 
   <header class="site-nav" id="siteNav">
     <a class="site-nav__logo" href="../index.html#hero" aria-label="Natasha Lemos">
@@ -30,13 +30,14 @@
     </a>
 
     <nav class="site-nav__links">
-      <a href="../index.html#about">
-        <span class="i18n" data-lang="pt">Sobre</span>
-        <span class="i18n" data-lang="en" hidden>About</span>
+      <a href="../index.html#work">
+        <span class="i18n" data-lang="pt">Outros trabalhos</span>
+        <span class="i18n" data-lang="en" hidden>Other work</span>
       </a>
-      <a href="../index.html#contact">
-        <span class="i18n" data-lang="pt">Contato</span>
-        <span class="i18n" data-lang="en" hidden>Contact</span>
+      <a href="https://www.linkedin.com/in/natashalemos/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="../assets/CV-NatashaLemosFerreira.pdf" download>
+        <span class="i18n" data-lang="pt">Currículo</span>
+        <span class="i18n" data-lang="en" hidden>Resume</span>
       </a>
       <div class="lang-toggle" role="group" aria-label="Idioma / Language">
         <button type="button" class="lang-btn is-active" data-lang="pt" aria-pressed="true">PT</button>
@@ -54,131 +55,155 @@
 
     <!-- ========================= CABEÇALHO ========================= -->
     <header class="section case-header">
-      <div class="tags">
-        <span class="tag">
-          <span class="i18n" data-lang="pt">Product Design</span>
-          <span class="i18n" data-lang="en" hidden>Product Design</span>
-        </span>
-        <span class="tag">
-          <span class="i18n" data-lang="pt">App Mobile · E-commerce</span>
-          <span class="i18n" data-lang="en" hidden>Mobile App · E-commerce</span>
-        </span>
-      </div>
+      <p class="case-company">Zee.Now</p>
 
       <h1>
-        <span class="i18n" data-lang="pt">Favoritos · Zee.Now</span>
-        <span class="i18n" data-lang="en" hidden>Favorites · Zee.Now</span>
+        <span class="i18n" data-lang="pt">Favoritos</span>
+        <span class="i18n" data-lang="en" hidden>Favorites</span>
       </h1>
 
       <p class="subtitle">
-        <span class="i18n" data-lang="pt">Organização e rapidez para facilitar a recompra de itens recorrentes.</span>
-        <span class="i18n" data-lang="en" hidden>Organization and speed to make repurchasing recurring items easier.</span>
+        <span class="i18n" data-lang="pt">Organização e rapidez para facilitar a recompra de itens recorrentes</span>
+        <span class="i18n" data-lang="en" hidden>Organization and speed to make repurchasing recurring items easier</span>
+      </p>
+    </header>
+
+    <!-- ========================== CONTEXTO ========================== -->
+    <section class="section case-section">
+      <h2>
+        <span class="i18n" data-lang="pt">Contexto</span>
+        <span class="i18n" data-lang="en" hidden>Context</span>
+      </h2>
+      <p>
+        <span class="i18n" data-lang="pt">A Zee.Now, pet shop online da Zee.Dog, passava por um reposicionamento estratégico para se tornar não apenas a entrega mais rápida, mas também a experiência de compra mais rápida. O app já contava com um botão de recompra, que permitia adicionar rapidamente itens comprados anteriormente ao carrinho. No entanto, essa funcionalidade não atendia usuários que queriam organizar produtos recorrentes ou salvar itens para compras futuras.</span>
+        <span class="i18n" data-lang="en" hidden>Zee.Now, Zee.Dog's online pet shop, was going through a strategic repositioning to become not just the fastest delivery, but also the fastest shopping experience. The app already had a repurchase button that let users quickly add previously bought items to the cart. That feature, however, did not serve users who wanted to organize recurring products or save items for future purchases.</span>
+      </p>
+      <p>
+        <span class="i18n" data-lang="pt">As compras na Zee.Now são, em grande parte, recorrentes e compostas por itens essenciais do dia a dia. A ausência de uma lógica de listas gerava fricção para usuários que desejavam mais controle e agilidade no processo de recompra. A funcionalidade de Favoritos surgiu para preencher essa lacuna, permitindo salvar e organizar produtos de forma simples, rápida e consistente com a experiência do app.</span>
+        <span class="i18n" data-lang="en" hidden>Purchases on Zee.Now are largely recurring and made up of everyday essentials. The absence of any list logic created friction for users who wanted more control and speed when repurchasing. The Favorites feature emerged to fill that gap, letting people save and organize products in a way that is simple, fast, and consistent with the app experience.</span>
+      </p>
+    </section>
+
+    <!-- ========================== PROBLEMA ========================== -->
+    <section class="section case-section">
+      <h2>
+        <span class="i18n" data-lang="pt">Problema</span>
+        <span class="i18n" data-lang="en" hidden>Problem</span>
+      </h2>
+      <p>
+        <span class="i18n" data-lang="pt">Usuários precisavam refazer buscas ou depender apenas da recompra direta, sem possibilidade de organizar produtos por contexto ou preferência. Isso gerava fricção em uma jornada que deveria ser simples, rápida e eficiente.</span>
+        <span class="i18n" data-lang="en" hidden>Users had to redo searches or rely solely on direct repurchase, with no way to organize products by context or preference. This created friction in a journey that should have been simple, fast, and efficient.</span>
+      </p>
+    </section>
+
+    <!-- ========================== OBJETIVO ========================== -->
+    <section class="section case-section">
+      <h2>
+        <span class="i18n" data-lang="pt">Objetivo</span>
+        <span class="i18n" data-lang="en" hidden>Goal</span>
+      </h2>
+      <p>
+        <span class="i18n" data-lang="pt">Criar uma funcionalidade que permitisse salvar e organizar produtos recorrentes em listas, garantindo acesso rápido, clareza e consistência visual, alinhada à identidade da marca e às restrições técnicas do app.</span>
+        <span class="i18n" data-lang="en" hidden>Create a feature that would let users save and organize recurring products into lists, ensuring fast access, clarity, and visual consistency, aligned with the brand identity and the app's technical constraints.</span>
+      </p>
+    </section>
+
+    <!-- ========================= MEU PAPEL ========================== -->
+    <section class="section case-section">
+      <h2>
+        <span class="i18n" data-lang="pt">Meu papel</span>
+        <span class="i18n" data-lang="en" hidden>My role</span>
+      </h2>
+      <p>
+        <span class="i18n" data-lang="pt">Atuei como Product Designer, sendo responsável pelo discovery, definição da solução, desenho de fluxos, prototipação e alinhamento contínuo com os times de Produto, Negócio e Tecnologia.</span>
+        <span class="i18n" data-lang="en" hidden>I worked as Product Designer, responsible for discovery, solution definition, flow design, prototyping, and ongoing alignment with the Product, Business, and Technology teams.</span>
       </p>
 
       <dl class="meta-grid">
         <div>
           <dt>
-            <span class="i18n" data-lang="pt">Período</span>
-            <span class="i18n" data-lang="en" hidden>Timeframe</span>
+            <span class="i18n" data-lang="pt">Duração</span>
+            <span class="i18n" data-lang="en" hidden>Duration</span>
           </dt>
           <dd>
-            <span class="i18n" data-lang="pt">4 meses · 2024</span>
-            <span class="i18n" data-lang="en" hidden>4 months · 2024</span>
+            <span class="i18n" data-lang="pt">4 meses</span>
+            <span class="i18n" data-lang="en" hidden>4 months</span>
           </dd>
         </div>
         <div>
           <dt>
-            <span class="i18n" data-lang="pt">Papel</span>
-            <span class="i18n" data-lang="en" hidden>Role</span>
+            <span class="i18n" data-lang="pt">Ano</span>
+            <span class="i18n" data-lang="en" hidden>Year</span>
           </dt>
-          <dd>Product Designer</dd>
+          <dd>2024</dd>
         </div>
       </dl>
-    </header>
-
-    <!-- ==================== RESPONSABILIDADES ======================= -->
-    <section class="section case-section">
-      <h2>
-        <span class="i18n" data-lang="pt">Responsabilidades</span>
-        <span class="i18n" data-lang="en" hidden>Responsibilities</span>
-      </h2>
-      <ul>
-        <li>
-          <span class="i18n" data-lang="pt">Discovery e definição da solução</span>
-          <span class="i18n" data-lang="en" hidden>Discovery and solution definition</span>
-        </li>
-        <li>
-          <span class="i18n" data-lang="pt">Desenho de fluxos e prototipação de baixa a alta fidelidade</span>
-          <span class="i18n" data-lang="en" hidden>Flow design and low-to-high-fidelity prototyping</span>
-        </li>
-        <li>
-          <span class="i18n" data-lang="pt">Alinhamento contínuo com os times de Produto, Negócio e Tecnologia</span>
-          <span class="i18n" data-lang="en" hidden>Ongoing alignment with the Product, Business, and Technology teams</span>
-        </li>
-      </ul>
     </section>
 
-    <!-- ===================== NÚMEROS EM DESTAQUE ==================== -->
-    <section class="section">
-      <div class="stats-grid">
-        <div>
-          <strong>4</strong>
-          <span>
-            <span class="i18n" data-lang="pt">meses de projeto, do discovery ao lançamento</span>
-            <span class="i18n" data-lang="en" hidden>months, from discovery to launch</span>
-          </span>
-        </div>
-        <div>
-          <strong>5</strong>
-          <span>
-            <span class="i18n" data-lang="pt">produtos analisados no benchmarking (Amazon, Spotify, Mercado Livre, Airbnb, Pinterest)</span>
-            <span class="i18n" data-lang="en" hidden>products analyzed in the benchmark (Amazon, Spotify, Mercado Livre, Airbnb, Pinterest)</span>
-          </span>
-        </div>
-        <div>
-          <strong>3</strong>
-          <span>
-            <span class="i18n" data-lang="pt">fluxos principais entregues: favoritar, listas e detalhe da lista</span>
-            <span class="i18n" data-lang="en" hidden>core flows delivered: favoriting, lists, and list detail</span>
-          </span>
-        </div>
-      </div>
-    </section>
+    <!-- ===================== TELAS DA SOLUÇÃO ======================= -->
+    <div class="screens">
+      <figure>
+        <img src="../assets/projetos/favoritos-zee-now/01-bottomsheet-favoritar.png"
+             alt="Bottomsheet do app da Zee.Now para favoritar um item e escolher a lista." />
+        <figcaption>
+          <strong>Bottomsheet</strong>
+          <span class="i18n" data-lang="pt">Favoritar item</span>
+          <span class="i18n" data-lang="en" hidden>Favoriting an item</span>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="../assets/projetos/favoritos-zee-now/02-meus-favoritos.png"
+             alt="Tela Meus Favoritos, com a visão geral de todas as listas criadas." />
+        <figcaption>
+          <strong>
+            <span class="i18n" data-lang="pt">Meus Favoritos</span>
+            <span class="i18n" data-lang="en" hidden>My Favorites</span>
+          </strong>
+          <span class="i18n" data-lang="pt">Visão geral com todas as listas</span>
+          <span class="i18n" data-lang="en" hidden>Overview of every list</span>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="../assets/projetos/favoritos-zee-now/03-detalhe-da-lista.png"
+             alt="Tela de detalhe de uma lista, com os itens salvos prontos para recompra." />
+        <figcaption>
+          <strong>
+            <span class="i18n" data-lang="pt">Detalhe da Lista</span>
+            <span class="i18n" data-lang="en" hidden>List detail</span>
+          </strong>
+          <span class="i18n" data-lang="pt">Visão dentro de uma lista específica</span>
+          <span class="i18n" data-lang="en" hidden>Inside a specific list</span>
+        </figcaption>
+      </figure>
+    </div>
 
-    <!-- ============================ TEXTO ============================ -->
-    <section class="section case-section">
-      <h2>
-        <span class="i18n" data-lang="pt">O problema</span>
-        <span class="i18n" data-lang="en" hidden>The problem</span>
-      </h2>
-      <p>
-        <span class="i18n" data-lang="pt">A Zee.Now, pet shop online da Zee.Dog, passava por um reposicionamento estratégico para se tornar não apenas a entrega mais rápida, mas também a experiência de compra mais rápida. O app já tinha um botão de recompra rápida, mas ele não atendia quem queria organizar produtos recorrentes ou salvar itens para compras futuras — usuários precisavam refazer buscas ou depender só da recompra direta, sem possibilidade de organizar produtos por contexto ou preferência. Isso gerava fricção em uma jornada que deveria ser simples, rápida e eficiente.</span>
-        <span class="i18n" data-lang="en" hidden>Zee.Now, Zee.Dog's online pet shop, was going through a strategic repositioning to become not just the fastest delivery, but also the fastest shopping experience. The app already had a quick-repurchase button, but it didn't serve users who wanted to organize recurring products or save items for future purchases — people had to redo searches or rely solely on direct repurchase, with no way to organize products by context or preference. This created friction in a journey that should have been simple, fast, and efficient.</span>
-      </p>
-    </section>
-
+    <!-- ========================== O PROCESSO ======================== -->
     <section class="section case-section">
       <h2>
         <span class="i18n" data-lang="pt">O processo</span>
         <span class="i18n" data-lang="en" hidden>The process</span>
       </h2>
 
-      <h3>
-        <span class="i18n" data-lang="pt">Benchmarking</span>
-        <span class="i18n" data-lang="en" hidden>Benchmarking</span>
-      </h3>
+      <h3>Benchmarking</h3>
       <p>
-        <span class="i18n" data-lang="pt">Analisamos produtos digitais que lidam bem com o comportamento de salvar itens e recompra — Amazon, Spotify, Mercado Livre, Airbnb e Pinterest — para identificar padrões de uso, estruturas de listas e boas práticas de usabilidade aplicáveis ao contexto da Zee.Now.</span>
-        <span class="i18n" data-lang="en" hidden>We looked at digital products that handle saving items and repurchasing well — Amazon, Spotify, Mercado Livre, Airbnb, and Pinterest — to identify usage patterns, list structures, and usability best practices applicable to Zee.Now's context.</span>
+        <span class="i18n" data-lang="pt">Realizamos uma análise de produtos digitais que trabalham bem com o comportamento de salvar itens e recompra, como Amazon, Spotify, Mercado Livre, Airbnb e Pinterest. O objetivo foi identificar padrões de uso, estruturas de listas e boas práticas de usabilidade aplicáveis ao contexto da Zee.Now.</span>
+        <span class="i18n" data-lang="en" hidden>We analyzed digital products that handle saving items and repurchasing well, such as Amazon, Spotify, Mercado Livre, Airbnb, and Pinterest. The goal was to identify usage patterns, list structures, and usability best practices applicable to Zee.Now's context.</span>
       </p>
+    </section>
 
+    <figure class="case-figure">
+      <img src="../assets/projetos/favoritos-zee-now/04-benchmarking.png"
+           alt="Benchmarking dos fluxos de salvar itens em Airbnb, Instagram, Spotify, Booking e Pinterest." />
+    </figure>
+
+    <section class="section case-section">
       <h3>
         <span class="i18n" data-lang="pt">Mapeamento de jornada e fluxos</span>
         <span class="i18n" data-lang="en" hidden>Journey and flow mapping</span>
       </h3>
       <p>
-        <span class="i18n" data-lang="pt">Mapeamos a jornada principal — salvar produto → acessar lista → adicionar ao carrinho → finalizar compra — com foco em reduzir cliques e esforço cognitivo. Como a solução permitia criar listas, desenhamos subfluxos que garantissem uma experiência robusta e, ao mesmo tempo, simples.</span>
-        <span class="i18n" data-lang="en" hidden>We mapped the core journey — save product → open list → add to cart → check out — focused on reducing clicks and cognitive effort. Since the solution allowed users to create lists, we designed sub-flows that kept the experience robust while staying simple.</span>
+        <span class="i18n" data-lang="pt">Mapeamos a jornada principal: salvar produto → acessar lista → adicionar ao carrinho → finalizar compra, com foco em reduzir cliques e esforço cognitivo. Como a solução permitiria a criação de listas, foi necessário desenhar subfluxos que garantissem uma experiência robusta, porém simples, mantendo clareza em cada etapa.</span>
+        <span class="i18n" data-lang="en" hidden>We mapped the core journey: save product → open list → add to cart → check out, focused on reducing clicks and cognitive effort. Since the solution would allow users to create lists, we had to design sub-flows that kept the experience robust yet simple, staying clear at every step.</span>
       </p>
 
       <h3>
@@ -189,38 +214,113 @@
         <span class="i18n" data-lang="pt">Desenvolvi protótipos de baixa a alta fidelidade no Figma para validar fluxos, hierarquia da informação e interações, sempre considerando consistência visual com o app e viabilidade técnica.</span>
         <span class="i18n" data-lang="en" hidden>I built low-to-high-fidelity prototypes in Figma to validate flows, information hierarchy, and interactions, always weighing visual consistency with the app and technical feasibility.</span>
       </p>
+    </section>
 
+    <figure class="case-figure">
+      <img src="../assets/projetos/favoritos-zee-now/05-fluxos-e-prototipos.png"
+           alt="Mapa de fluxos e protótipos das telas da funcionalidade de Favoritos." />
+    </figure>
+
+    <section class="section case-section">
       <h3>
-        <span class="i18n" data-lang="pt">Desafios</span>
-        <span class="i18n" data-lang="en" hidden>Challenges</span>
+        <span class="i18n" data-lang="pt">Desafios durante o processo</span>
+        <span class="i18n" data-lang="en" hidden>Challenges along the way</span>
       </h3>
       <p>
-        <span class="i18n" data-lang="pt">O principal desafio foi conciliar visões diferentes entre os times de negócio e produto, que geraram ajustes frequentes ao longo do processo — exigindo flexibilidade, negociação e priorização constante. Como consequência, o prazo do projeto foi estendido, reforçando a importância de critérios claros de decisão.</span>
-        <span class="i18n" data-lang="en" hidden>The main challenge was reconciling different views between the business and product teams, which led to frequent adjustments throughout the process — requiring flexibility, negotiation, and constant prioritization. As a result, the project timeline was extended, reinforcing the importance of clear decision criteria.</span>
+        <span class="i18n" data-lang="pt">O principal desafio foi conciliar diferentes visões entre os times de negócio e produto, que geraram ajustes frequentes ao longo do processo. Isso exigiu flexibilidade, negociação e priorização constante para garantir que as decisões mantivessem o foco na experiência do usuário sem comprometer objetivos estratégicos. Como consequência, o prazo do projeto foi estendido, reforçando a importância de critérios claros de decisão.</span>
+        <span class="i18n" data-lang="en" hidden>The main challenge was reconciling different views between the business and product teams, which led to frequent adjustments throughout the process. This required flexibility, negotiation, and constant prioritization to keep decisions focused on the user experience without compromising strategic goals. As a result, the project timeline was extended, reinforcing the importance of clear decision criteria.</span>
+      </p>
+    </section>
+
+    <!-- ========================== RESULTADOS ======================== -->
+    <section class="section case-section">
+      <h2>
+        <span class="i18n" data-lang="pt">Resultados</span>
+        <span class="i18n" data-lang="en" hidden>Results</span>
+      </h2>
+      <p>
+        <span class="i18n" data-lang="pt">A funcionalidade de Favoritos foi lançada em uma primeira versão, permitindo que usuários salvassem e organizassem produtos para recompra de forma mais rápida e intuitiva. Embora não tenham sido realizados testes de usabilidade formais antes do lançamento, o fluxo passou por diversas iterações internas para garantir qualidade e clareza.</span>
+        <span class="i18n" data-lang="en" hidden>The Favorites feature launched in a first version, letting users save and organize products for repurchase more quickly and intuitively. Although no formal usability testing was carried out before launch, the flow went through several internal iterations to ensure quality and clarity.</span>
       </p>
     </section>
 
     <section class="section case-section">
       <h2>
-        <span class="i18n" data-lang="pt">A solução</span>
-        <span class="i18n" data-lang="en" hidden>The solution</span>
+        <span class="i18n" data-lang="pt">Resultados e próximos passos</span>
+        <span class="i18n" data-lang="en" hidden>Results and next steps</span>
       </h2>
       <p>
-        <span class="i18n" data-lang="pt">A solução final foi a funcionalidade de Favoritos, organizada em três fluxos principais: um bottomsheet para favoritar um item direto na jornada de compra, a tela "Meus Favoritos" com a visão geral de todas as listas criadas, e o detalhe de cada lista, com os itens salvos prontos para recompra. O desenho priorizou reduzir cliques e esforço cognitivo, mantendo consistência visual com o restante do app.</span>
-        <span class="i18n" data-lang="en" hidden>The final solution was the Favorites feature, organized into three core flows: a bottom sheet to favorite an item directly within the shopping journey, a "My Favorites" screen with an overview of all created lists, and each list's detail view, with saved items ready for repurchase. The design prioritized reducing clicks and cognitive effort, while keeping visual consistency with the rest of the app.</span>
+        <span class="i18n" data-lang="pt">Os próximos passos envolvem acompanhar o comportamento dos usuários e analisar dados de uso para orientar otimizações da experiência. Métricas como adoção da funcionalidade, engajamento com listas e conversão de itens favoritados em compras servirão de base para futuras iterações. Podemos medir o sucesso da feature por meio de algumas métricas-chave:</span>
+        <span class="i18n" data-lang="en" hidden>Next steps involve tracking user behavior and analyzing usage data to guide improvements to the experience. Metrics such as feature adoption, engagement with lists, and conversion of favorited items into purchases will inform future iterations. We can measure the feature's success through a few key metrics:</span>
       </p>
+
+      <div class="metrics-grid">
+        <div class="metrics-card">
+          <h3>
+            <span class="i18n" data-lang="pt">Adoção da feature</span>
+            <span class="i18n" data-lang="en" hidden>Feature adoption</span>
+          </h3>
+          <ul>
+            <li>
+              <span class="i18n" data-lang="pt">% de usuários que favoritaram pelo menos um item</span>
+              <span class="i18n" data-lang="en" hidden>% of users who favorited at least one item</span>
+            </li>
+            <li>
+              <span class="i18n" data-lang="pt">% de usuários que criaram pelo menos uma lista</span>
+              <span class="i18n" data-lang="en" hidden>% of users who created at least one list</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="metrics-card">
+          <h3>
+            <span class="i18n" data-lang="pt">Engajamento</span>
+            <span class="i18n" data-lang="en" hidden>Engagement</span>
+          </h3>
+          <ul>
+            <li>
+              <span class="i18n" data-lang="pt">Número médio de listas por usuário</span>
+              <span class="i18n" data-lang="en" hidden>Average number of lists per user</span>
+            </li>
+            <li>
+              <span class="i18n" data-lang="pt">Número médio de itens por lista</span>
+              <span class="i18n" data-lang="en" hidden>Average number of items per list</span>
+            </li>
+            <li>
+              <span class="i18n" data-lang="pt">Frequência de acesso às listas (diária, semanal, mensal)</span>
+              <span class="i18n" data-lang="en" hidden>How often lists are opened (daily, weekly, monthly)</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="metrics-card">
+          <h3>
+            <span class="i18n" data-lang="pt">Impacto no comportamento de compra</span>
+            <span class="i18n" data-lang="en" hidden>Impact on purchase behavior</span>
+          </h3>
+          <ul>
+            <li>
+              <span class="i18n" data-lang="pt">Taxa de conversão de itens favoritados para compra</span>
+              <span class="i18n" data-lang="en" hidden>Conversion rate from favorited item to purchase</span>
+            </li>
+            <li>
+              <span class="i18n" data-lang="pt">Tempo médio entre favoritar e comprar</span>
+              <span class="i18n" data-lang="en" hidden>Average time between favoriting and buying</span>
+            </li>
+            <li>
+              <span class="i18n" data-lang="pt">Ticket médio de compras de itens favoritados vs. não favoritados</span>
+              <span class="i18n" data-lang="en" hidden>Average order value for favorited vs. non-favorited items</span>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <section class="section case-section">
-      <h2>
-        <span class="i18n" data-lang="pt">O resultado</span>
-        <span class="i18n" data-lang="en" hidden>The result</span>
-      </h2>
-      <p>
-        <span class="i18n" data-lang="pt">A funcionalidade de Favoritos foi lançada em uma primeira versão, permitindo que os usuários salvassem e organizassem produtos para recompra de forma mais rápida e intuitiva. Não houve testes de usabilidade formais antes do lançamento, mas o fluxo passou por diversas iterações internas para garantir qualidade e clareza. Os próximos passos envolvem acompanhar a adoção da funcionalidade, o engajamento com as listas e a conversão de itens favoritados em compras, para orientar futuras iterações.</span>
-        <span class="i18n" data-lang="en" hidden>The Favorites feature launched in a first version, letting users save and organize products for repurchase more quickly and intuitively. No formal usability testing was done before launch, but the flow went through several internal iterations to ensure quality and clarity. Next steps involve tracking feature adoption, engagement with lists, and the conversion of favorited items into purchases, to guide future iterations.</span>
-      </p>
-    </section>
+    <a class="to-top" href="#topo">
+      <span aria-hidden="true">↑</span>
+      <span class="i18n" data-lang="pt">Voltar para o topo</span>
+      <span class="i18n" data-lang="en" hidden>Back to top</span>
+    </a>
   </main>
 
   <footer class="footer">
