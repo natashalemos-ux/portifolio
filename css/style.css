@@ -175,7 +175,8 @@ ol {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
   gap: 1.5rem;
   padding-left: clamp(1.5rem, 6vw, 6rem);
   padding-right: clamp(1.5rem, 6vw, 6rem);
@@ -210,27 +211,100 @@ ol {
 }
 
 /* ===================================================================
-   Selected work
+   Selected work — cards lado a lado
    =================================================================== */
-.work__list li {
-  border-top: 1px solid var(--border);
+.work h2 {
+  margin-bottom: 2rem;
 }
 
-.work__list li:last-child {
+.work__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.work-card {
+  display: flex;
+}
+
+.work-card > a {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  text-decoration: none;
+  overflow: hidden;
+  transition: border-color 0.2s ease, transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.work-card > a:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* Miniatura abstrata no topo do card (puramente decorativa) */
+.work-card__preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.6rem;
+  height: 150px;
+  padding: 1.5rem;
+  background: color-mix(in oklab, var(--accent) 7%, transparent);
   border-bottom: 1px solid var(--border);
 }
 
-.work__list a {
+.work-card__preview span {
   display: block;
-  padding: 1.5rem 0;
-  font-size: clamp(1.5rem, 6vw, 3rem);
-  font-weight: 800;
-  text-decoration: none;
-  transition: color 0.2s ease;
+  height: 10px;
+  border-radius: var(--radius);
+  background: color-mix(in oklab, var(--accent) 22%, transparent);
 }
 
-.work__list a:hover {
-  color: var(--accent);
+.work-card__preview span:nth-child(1) {
+  width: 45%;
+  background: var(--accent);
+}
+
+.work-card__preview span:nth-child(2) {
+  width: 80%;
+}
+
+.work-card__preview span:nth-child(3) {
+  width: 62%;
+}
+
+.work-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.work-card__body h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.work-card__body p {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.work-card__cta {
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius);
+  background: var(--accent);
+  color: var(--accent-contrast);
+  font-size: 0.85rem;
+  font-weight: 700;
 }
 
 /* ===================================================================
@@ -298,18 +372,99 @@ ol {
 }
 
 /* ===================================================================
-   Contact
+   Contact — cards lado a lado
    =================================================================== */
 .contact h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
-.contact p {
-  margin: 0.5rem 0;
+.contact__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
 }
 
-.contact a {
-  text-decoration: underline;
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: border-color 0.2s ease, transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.contact-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.contact-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 0.4rem;
+  border-radius: var(--radius);
+  background: color-mix(in oklab, var(--accent) 12%, transparent);
+  color: var(--accent);
+}
+
+.contact-card__icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.contact-card h3 {
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.contact-card p {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.contact-card__cta {
+  align-self: flex-start;
+  margin-top: 0.75rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: var(--radius);
+  background: var(--accent);
+  color: var(--accent-contrast);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+/* Card em destaque (fundo sólido no acento) */
+.contact-card--accent {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-contrast);
+}
+
+.contact-card--accent p {
+  color: color-mix(in oklab, var(--accent-contrast) 80%, transparent);
+}
+
+.contact-card--accent .contact-card__icon {
+  background: color-mix(in oklab, var(--accent-contrast) 20%, transparent);
+  color: var(--accent-contrast);
+}
+
+.contact-card--accent .contact-card__cta {
+  background: var(--accent-contrast);
+  color: var(--accent);
+}
+
+.contact__location {
+  margin-top: 2rem;
+  color: var(--muted);
+  font-size: 0.9rem;
 }
 
 /* ===================================================================

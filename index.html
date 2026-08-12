@@ -75,16 +75,46 @@
 
       <ul class="work__list">
         <!-- Duplique este <li> para cada novo projeto e ajuste o href e os textos -->
-        <li>
+        <li class="work-card">
           <a href="projetos/favoritos-zee-now.html">
-            <span class="i18n" data-lang="pt">Favoritos · Zee.Now</span>
-            <span class="i18n" data-lang="en" hidden>Favorites · Zee.Now</span>
+            <div class="work-card__preview" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="work-card__body">
+              <h3>
+                <span class="i18n" data-lang="pt">Favoritos · Zee.Now</span>
+                <span class="i18n" data-lang="en" hidden>Favorites · Zee.Now</span>
+              </h3>
+              <p>
+                <span class="i18n" data-lang="pt">Como desenhei a funcionalidade de Favoritos para facilitar a recompra de itens recorrentes no app de um pet shop online.</span>
+                <span class="i18n" data-lang="en" hidden>How I designed the Favorites feature to make repurchasing recurring items easier in an online pet shop app.</span>
+              </p>
+              <span class="work-card__cta">
+                <span class="i18n" data-lang="pt">Ver case</span>
+                <span class="i18n" data-lang="en" hidden>View case</span>
+              </span>
+            </div>
           </a>
         </li>
-        <li>
+        <li class="work-card">
           <a href="projetos/vitrines-cards-vivo.html">
-            <span class="i18n" data-lang="pt">Vitrines &amp; Cards · Vivo</span>
-            <span class="i18n" data-lang="en" hidden>Storefronts &amp; Cards · Vivo</span>
+            <div class="work-card__preview" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="work-card__body">
+              <h3>
+                <span class="i18n" data-lang="pt">Vitrines &amp; Cards · Vivo</span>
+                <span class="i18n" data-lang="en" hidden>Storefronts &amp; Cards · Vivo</span>
+              </h3>
+              <p>
+                <span class="i18n" data-lang="pt">Como redesenhei vitrines e cards de planos de telecom para facilitar a comparação e apoiar decisões de compra mais seguras.</span>
+                <span class="i18n" data-lang="en" hidden>How I redesigned telecom plan storefronts and cards to make comparison easier and support more confident purchase decisions.</span>
+              </p>
+              <span class="work-card__cta">
+                <span class="i18n" data-lang="pt">Ver case</span>
+                <span class="i18n" data-lang="en" hidden>View case</span>
+              </span>
+            </div>
           </a>
         </li>
       </ul>
@@ -210,9 +240,70 @@
         <span class="i18n" data-lang="pt">Contato</span>
         <span class="i18n" data-lang="en" hidden>Contact</span>
       </h2>
-      <p><a href="mailto:natasha.lemosmf@gmail.com">natasha.lemosmf@gmail.com</a></p>
-      <p><a href="https://www.linkedin.com/in/natashalemos/" target="_blank" rel="noopener">LinkedIn</a></p>
-      <p>
+      <div class="contact__grid">
+        <a class="contact-card contact-card--accent" href="mailto:natasha.lemosmf@gmail.com">
+          <span class="contact-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="m22 7-10 6L2 7" />
+            </svg>
+          </span>
+          <h3>
+            <span class="i18n" data-lang="pt">E-mail</span>
+            <span class="i18n" data-lang="en" hidden>Email</span>
+          </h3>
+          <p>
+            <span class="i18n" data-lang="pt">Vamos conversar sobre o seu próximo produto.</span>
+            <span class="i18n" data-lang="en" hidden>Let's talk about your next product.</span>
+          </p>
+          <span class="contact-card__cta">
+            <span class="i18n" data-lang="pt">Enviar mensagem</span>
+            <span class="i18n" data-lang="en" hidden>Send a message</span>
+          </span>
+        </a>
+
+        <a class="contact-card" href="https://www.linkedin.com/in/natashalemos/" target="_blank" rel="noopener">
+          <span class="contact-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.75V21h-4v-5.6c0-1.34-.03-3.06-1.95-3.06-1.95 0-2.25 1.45-2.25 2.96V21H9z" />
+            </svg>
+          </span>
+          <h3>LinkedIn</h3>
+          <p>
+            <span class="i18n" data-lang="pt">Trajetória, bastidores e atualizações sobre os projetos.</span>
+            <span class="i18n" data-lang="en" hidden>Career, behind the scenes, and project updates.</span>
+          </p>
+          <span class="contact-card__cta">
+            <span class="i18n" data-lang="pt">Ver perfil</span>
+            <span class="i18n" data-lang="en" hidden>View profile</span>
+          </span>
+        </a>
+
+        <a class="contact-card" href="assets/CV-NatashaLemosFerreira.pdf" download>
+          <span class="contact-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <path d="M14 2v6h6" />
+              <path d="M12 18v-6" />
+              <path d="m9 15 3 3 3-3" />
+            </svg>
+          </span>
+          <h3>
+            <span class="i18n" data-lang="pt">Currículo</span>
+            <span class="i18n" data-lang="en" hidden>Resume</span>
+          </h3>
+          <p>
+            <span class="i18n" data-lang="pt">Experiência, formação e ferramentas em uma página.</span>
+            <span class="i18n" data-lang="en" hidden>Experience, education, and tools on a single page.</span>
+          </p>
+          <span class="contact-card__cta">
+            <span class="i18n" data-lang="pt">Baixar PDF</span>
+            <span class="i18n" data-lang="en" hidden>Download PDF</span>
+          </span>
+        </a>
+      </div>
+
+      <p class="contact__location">
         <span class="i18n" data-lang="pt">Rio de Janeiro, Brasil</span>
         <span class="i18n" data-lang="en" hidden>Rio de Janeiro, Brazil</span>
       </p>
