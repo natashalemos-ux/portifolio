@@ -630,6 +630,17 @@ ol {
   font-size: 0.85rem;
 }
 
+/* Vídeo do case. O preload="none" no HTML faz o arquivo só baixar quando a
+   pessoa aperta play — até lá aparece só a imagem de capa (poster). */
+.case-figure video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--text);
+}
+
 /* Trio de telas de celular, lado a lado */
 .screens {
   display: grid;

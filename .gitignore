@@ -15,3 +15,6 @@ Thumbs.db
 # Capas em tamanho original — as versões otimizadas vivem em
 # assets/projetos/<projeto>/capa.png
 /capa-*.png
+
+# Vídeos originais — a versão publicada vive em assets/projetos/<projeto>/
+/*.mp4
