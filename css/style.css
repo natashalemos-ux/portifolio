@@ -5,7 +5,7 @@
    (estilo Luma, base Mauve, acento Teal, radius Small, fonte Raleway).
    A cor de fundo é a original do portfólio, não a do preset. */
 :root {
-  --bg: #f4f2ec;
+  --bg: #f5f5f4;
   --text: oklch(0.145 0.008 326);
   --muted: oklch(0.542 0.034 322.5);
   --accent: oklch(0.511 0.096 186.391);
@@ -86,7 +86,7 @@ ol {
 /* Enquanto a página está no topo, o header fica transparente sobre o hero.
    Ao rolar, js/main.js adiciona esta classe e ele vira um vidro fosco. */
 .site-nav.is-scrolled {
-  background: rgba(244, 242, 236, 0.75);
+  background: rgba(245, 245, 244, 0.75);
   border-bottom-color: var(--border);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
