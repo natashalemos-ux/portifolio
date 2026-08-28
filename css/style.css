@@ -716,6 +716,73 @@ ol {
   font-size: 0.9rem;
 }
 
+/* Pergunta/frase de virada dentro do texto do case */
+.case-pullquote {
+  margin: 1.5rem 0;
+  padding-left: 1.25rem;
+  border-left: 3px solid var(--accent);
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.case-section .case-pullquote {
+  color: var(--text);
+  max-width: 60ch;
+}
+
+/* Bloco de uma métrica: título, números de "antes" e o que seria acompanhado */
+.metric-block {
+  padding: 1.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-top: 1.5rem;
+}
+
+.metric-block h3 {
+  margin: 0 0 1.25rem;
+  font-size: 1.1rem;
+}
+
+.metric-block__label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+}
+
+.case-section .metric-block__label {
+  color: var(--muted);
+}
+
+.metric-block__stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.metric-block__stats strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1.1;
+}
+
+.metric-block__stats span {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.metric-block p + .metric-block__label {
+  margin-top: 1.25rem;
+}
+
 /* Link "voltar ao topo" no fim do case */
 .to-top {
   display: block;
