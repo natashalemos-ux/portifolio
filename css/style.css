@@ -227,7 +227,8 @@ ol {
   display: flex;
 }
 
-.work-card > a {
+.work-card > a,
+.work-card > div {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -244,6 +245,25 @@ ol {
   border-color: var(--accent);
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* Card de projeto ainda em construção: não é link (a página não existe
+   ainda). O selo e a borda tracejada sinalizam o estado. */
+.work-card--wip > div {
+  border-style: dashed;
+  cursor: default;
+}
+
+.work-card__badge {
+  align-self: flex-start;
+  padding: 0.3rem 0.7rem;
+  border: 1px solid var(--muted);
+  border-radius: var(--radius);
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 /* Capa do projeto no topo do card.
