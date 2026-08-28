@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Header · Zee.Now · Natasha Lemos</title>
+  <meta name="description" content="Redesign do header da Zee.Now, guiado por dados de uso, para trazer mais clareza e hierarquia à navegação." />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://natashalemos.vercel.app/projetos/header-zee-now.html" />
+  <meta property="og:title" content="Header · Zee.Now · Natasha Lemos" />
+  <meta property="og:description" content="Redesign do header da Zee.Now, guiado por dados de uso, para trazer mais clareza e hierarquia à navegação." />
+  <meta property="og:image" content="https://natashalemos.vercel.app/assets/og-image.png?v=2" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap" />
+
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body id="topo">
+
+  <header class="site-nav" id="siteNav">
+    <a class="site-nav__logo" href="../index.html#hero" aria-label="Natasha Lemos">
+      <img src="../favicon.svg" alt="" width="36" height="36" />
+    </a>
+
+    <nav class="site-nav__links">
+      <a href="../index.html#about">
+        <span class="i18n" data-lang="pt">Sobre</span>
+        <span class="i18n" data-lang="en" hidden>About</span>
+      </a>
+      <a href="../index.html#contact">
+        <span class="i18n" data-lang="pt">Contato</span>
+        <span class="i18n" data-lang="en" hidden>Contact</span>
+      </a>
+      <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+        <button type="button" class="lang-btn is-active" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <a class="back-link" href="../index.html#work">
+      <span aria-hidden="true">←</span>
+      <span class="i18n" data-lang="pt">Voltar</span>
+      <span class="i18n" data-lang="en" hidden>Back</span>
+    </a>
+
+    <!-- ========================= CABEÇALHO ========================= -->
+    <header class="section case-header">
+      <p class="case-company">Zee.Now</p>
+
+      <h1>Header</h1>
+
+      <p class="subtitle">
+        <span class="i18n" data-lang="pt">Reorganização do header do site, guiada por dados de uso, pra trazer mais clareza e hierarquia.</span>
+        <span class="i18n" data-lang="en" hidden>A data-informed reorganization of the site header, bringing more clarity and hierarchy to navigation.</span>
+      </p>
+    </header>
+
+    <!-- ========================== CONTEXTO ========================== -->
+    <section class="section case-section">
+      <h2>
+        <span class="i18n" data-lang="pt">Contexto</span>
+        <span class="i18n" data-lang="en" hidden>Context</span>
+      </h2>
+      <p>
+        <span class="i18n" data-lang="pt">A Zee.Now vinha de um backlog extenso de melhorias e de um momento de reposicionamento de marca. O time já tinha entregado o projeto de Favoritos, e a entrega rápida — principal diferencial da marca até então — tinha virado commodity: hoje praticamente todo concorrente entrega rápido. Isso deslocou o foco pra outro lugar: tornar a experiência de compra em si mais rápida e fluida, não só a entrega.</span>
+        <span class="i18n" data-lang="en" hidden>Zee.Now was coming off an extensive backlog of improvements and a brand repositioning moment. The team had already delivered the Favorites project, and fast delivery — the brand's main differentiator until then — had become a commodity: today virtually every competitor delivers fast. That shifted the focus elsewhere: making the shopping experience itself faster and smoother, not just the delivery.</span>
+      </p>
+    </section>
+
+    <!-- ========================== PROBLEMA ========================== -->
+    <section class="section case-section">
+      <h2>
+        <span class="i18n" data-lang="pt">Problema</span>
+        <span class="i18n" data-lang="en" hidden>Problem</span>
+      </h2>
+      <p>
+        <span class="i18n" data-lang="pt">Diferente de outros projetos, esse não nasceu de um problema mapeado de antemão. A demanda inicial era mais simples: atualizar visualmente o header, alinhado ao momento da marca de parecer mais atual. Foi só ao olhar os dados de uso — Google Analytics e Hotjar — que apareceram oportunidades reais de hierarquia: itens com pouco uso ocupando destaque, e itens estratégicos praticamente escondidos.</span>
+        <span class="i18n" data-lang="en" hidden>Unlike other projects, this one didn't start from a problem mapped out in advance. The initial request was simpler: refresh the header visually, in line with the brand's push to look more current. It was only when looking at usage data — Google Analytics and Hotjar — that real hierarchy opportunities surfaced: low-usage items taking up prominent space, and strategic items practically hidden.</span>
+      </p>
+    </section>
+
+    <!-- ========================== OBJETIVO ========================== -->
+    <section class="section case-section">
+      <h2>
+        <span class="i18n" data-lang="pt">Objetivo</span>
+        <span class="i18n" data-lang="en" hidden>Goal</span>
+      </h2>
+      <p>
+        <span class="i18n" data-lang="pt">Ir além de uma repaginada estética: usar a atualização visual como gancho pra repensar a hierarquia do header com base em dados reais de uso, deixando a navegação mais clara, mais alinhada ao comportamento do usuário e com um visual mais moderno e leve — mantendo consistência entre mobile e desktop.</span>
+        <span class="i18n" data-lang="en" hidden>Go beyond a cosmetic refresh: use the visual update as a hook to rethink the header's hierarchy based on real usage data, making navigation clearer, better aligned with user behavior, and visually lighter and more current — while keeping mobile and desktop consistent.</span>
+      </p>
+    </section>
+
+    <!-- ========================= MEU PAPEL ========================== -->
+    <section class="section case-section">
+      <h2>
+        <span class="i18n" data-lang="pt">Meu papel</span>
+        <span class="i18n" data-lang="en" hidden>My role</span>
+      </h2>
+      <p>
+        <span class="i18n" data-lang="pt">Liderei o projeto sozinha, da leitura dos dados ao desenho final. Ao longo do processo, passei o trabalho por sessões de review/critique com o time de design, e no fechamento apresentei a solução pros times de negócio, produto e desenvolvimento.</span>
+        <span class="i18n" data-lang="en" hidden>I led the project on my own, from reading the data to the final design. Along the way, I took the work through review and critique sessions with the design team, and at the end presented the solution to the business, product, and engineering teams.</span>
+      </p>
+
+      <dl class="meta-grid">
+        <div>
+          <dt>
+            <span class="i18n" data-lang="pt">Duração</span>
+            <span class="i18n" data-lang="en" hidden>Duration</span>
+          </dt>
+          <dd>
+            <span class="i18n" data-lang="pt">2 a 3 meses</span>
+            <span class="i18n" data-lang="en" hidden>2 to 3 months</span>
+          </dd>
+        </div>
+        <div>
+          <dt>
+            <span class="i18n" data-lang="pt">Ano</span>
+            <span class="i18n" data-lang="en" hidden>Year</span>
+          </dt>
+          <dd>2025</dd>
+        </div>
+      </dl>
+    </section>
+
+    <!--
+      ===================== GALERIA: ANTES E DEPOIS =====================
+      Descomente os blocos abaixo conforme for colocando as imagens em
+      assets/projetos/header-zee-now/. Nomes esperados:
+        01-header-atual-desktop.png
+        02-header-atual-mobile.png
+        03-header-novo-desktop.png
+        04-header-novo-mobile.png
+
+    <figure class="case-figure">
+      <img src="../assets/projetos/header-zee-now/01-header-atual-desktop.png"
+           alt="Header atual da Zee.Now na versão desktop." />
+      <figcaption>
+        <span class="i18n" data-lang="pt">Header atual — desktop</span>
+        <span class="i18n" data-lang="en" hidden>Current header — desktop</span>
+      </figcaption>
+    </figure>
+
+    <figure class="case-figure">
+      <img src="../assets/projetos/header-zee-now/02-header-atual-mobile.png"
+           alt="Header atual da Zee.Now na versão mobile." />
+      <figcaption>
+        <span class="i18n" data-lang="pt">Header atual — mobile</span>
+        <span class="i18n" data-lang="en" hidden>Current header — mobile</span>
+      </figcaption>
+    </figure>
+
+    <figure class="case-figure">
+      <img src="../assets/projetos/header-zee-now/03-header-novo-desktop.png"
+           alt="Header redesenhado da Zee.Now na versão desktop." />
+      <figcaption>
+        <span class="i18n" data-lang="pt">Header novo — desktop</span>
+        <span class="i18n" data-lang="en" hidden>New header — desktop</span>
+      </figcaption>
+    </figure>
+
+    <figure class="case-figure">
+      <img src="../assets/projetos/header-zee-now/04-header-novo-mobile.png"
+           alt="Header redesenhado da Zee.Now na versão mobile." />
+      <figcaption>
+        <span class="i18n" data-lang="pt">Header novo — mobile</span>
+        <span class="i18n" data-lang="en" hidden>New header — mobile</span>
+      </figcaption>
+    </figure>
+    -->
+
+    <!-- ========================== O PROCESSO ======================== -->
+    <section class="section case-section">
+      <h2>
+        <span class="i18n" data-lang="pt">O processo</span>
+        <span class="i18n" data-lang="en" hidden>The process</span>
+      </h2>
+
+      <h3>Benchmarking</h3>
+      <p>
+        <span class="i18n" data-lang="pt">O benchmarking foi amplo e não se limitou a concorrentes diretos: além de players de pet (Petlove, Petz, Cobasi, Chewy, PetSmart), o comparativo incluiu grandes e-commerces e marcas de lifestyle/moda (Mercado Livre, Adidas, Nike, On, Allbirds, Fable, Cuyana), pra entender como cada um organiza e prioriza os itens do header — independente do segmento.</span>
+        <span class="i18n" data-lang="en" hidden>The benchmark was broad and not limited to direct competitors: beyond pet players (Petlove, Petz, Cobasi, Chewy, PetSmart), it included large e-commerce sites and lifestyle/fashion brands (Mercado Livre, Adidas, Nike, On, Allbirds, Fable, Cuyana), to understand how each one organizes and prioritizes header items — regardless of industry.</span>
+      </p>
+    </section>
+
+    <!--
+      Imagem do comparativo de benchmarking. Nome esperado:
+        05-benchmarking-comparativo.png
+
+    <figure class="case-figure">
+      <img src="../assets/projetos/header-zee-now/05-benchmarking-comparativo.png"
+           alt="Comparativo dos headers dos produtos analisados no benchmarking." />
+      <figcaption>
+        <span class="i18n" data-lang="pt">Comparativo dos headers analisados, de players de pet a grandes e-commerces e marcas de lifestyle.</span>
+        <span class="i18n" data-lang="en" hidden>Comparison of the headers analyzed, from pet players to large e-commerce sites and lifestyle brands.</span>
+      </figcaption>
+    </figure>
+    -->
+
+    <section class="section case-section">
+      <h3>
+        <span class="i18n" data-lang="pt">Análise de dados</span>
+        <span class="i18n" data-lang="en" hidden>Data analysis</span>
+      </h3>
+      <p>
+        <span class="i18n" data-lang="pt">A leitura cruzou Google Analytics e mapas de calor do Hotjar. Os números mostraram que busca, perfil/acompanhamento de pedido e ajuda são os pontos mais acessados do header, enquanto recompra tem baixo tráfego apesar de ser estratégica pro negócio. O heatmap reforçou isso: a maior concentração de cliques fica na barra de busca e nos ícones do canto direito — sinal de que a hierarquia visual do header antigo não refletia o uso real.</span>
+        <span class="i18n" data-lang="en" hidden>The analysis cross-referenced Google Analytics with Hotjar heatmaps. The numbers showed that search, profile/order tracking, and help are the most accessed points in the header, while repurchase gets low traffic despite being strategic for the business. The heatmap reinforced this: the heaviest concentration of clicks sits on the search bar and the icons on the right — a sign that the old header's visual hierarchy didn't reflect actual usage.</span>
+      </p>
+    </section>
+
+    <!--
+      Imagens da análise de dados. Nomes esperados:
+        06-analytics-paginas.png
+        07-hotjar-heatmap.png
+
+    <figure class="case-figure">
+      <img src="../assets/projetos/header-zee-now/06-analytics-paginas.png"
+           alt="Tabela do Google Analytics com as páginas mais visitadas do site." />
+      <figcaption>
+        <span class="i18n" data-lang="pt">Páginas mais visitadas — Google Analytics</span>
+        <span class="i18n" data-lang="en" hidden>Most visited pages — Google Analytics</span>
+      </figcaption>
+    </figure>
+
+    <figure class="case-figure">
+      <img src="../assets/projetos/header-zee-now/07-hotjar-heatmap.png"
+           alt="Mapa de calor do Hotjar sobre a home, com os cliques concentrados na busca e nos ícones da direita." />
+      <figcaption>
+        <span class="i18n" data-lang="pt">Mapa de calor — Hotjar</span>
+        <span class="i18n" data-lang="en" hidden>Heatmap — Hotjar</span>
+      </figcaption>
+    </figure>
+    -->
+
+    <section class="section case-section">
+      <h3>
+        <span class="i18n" data-lang="pt">Desafios</span>
+        <span class="i18n" data-lang="en" hidden>Challenges</span>
+      </h3>
+      <p>
+        <span class="i18n" data-lang="pt">O maior desafio foi trabalhar com uma base de dados limitada: a conta do Hotjar da empresa tinha um plano restrito e não trazia dados tão expressivos quanto o ideal pra embasar as decisões com mais profundidade.</span>
+        <span class="i18n" data-lang="en" hidden>The biggest challenge was working with a limited data set: the company's Hotjar account was on a restricted plan and didn't provide data rich enough to back the decisions in more depth.</span>
+      </p>
+    </section>
+
+    <!-- ========================== RESULTADOS ======================== -->
+    <section class="section case-section">
+      <h2>
+        <span class="i18n" data-lang="pt">Resultados</span>
+        <span class="i18n" data-lang="en" hidden>Results</span>
+      </h2>
+      <p>
+        <span class="i18n" data-lang="pt">O novo header foi lançado, mas como saí da empresa logo em seguida, não cheguei a acompanhar os resultados reais pós-lançamento. O racional por trás da mudança era direto: ao aproximar a hierarquia do header do comportamento real de uso, a expectativa era reduzir fricção nos pontos mais acessados (busca, perfil/acompanhamento) e dar mais visibilidade a um item estratégico que estava escondido (recompra).</span>
+        <span class="i18n" data-lang="en" hidden>The new header shipped, but since I left the company shortly afterwards, I never got to follow the real post-launch results. The rationale behind the change was straightforward: by bringing the header's hierarchy closer to actual usage behavior, the expectation was to reduce friction at the most accessed points (search, profile/order tracking) and give more visibility to a strategic item that was hidden (repurchase).</span>
+      </p>
+
+      <h3>
+        <span class="i18n" data-lang="pt">Métricas a acompanhar</span>
+        <span class="i18n" data-lang="en" hidden>Metrics to track</span>
+      </h3>
+
+      <div class="metrics-grid">
+        <div class="metrics-card">
+          <h3>
+            <span class="i18n" data-lang="pt">Recompra</span>
+            <span class="i18n" data-lang="en" hidden>Repurchase</span>
+          </h3>
+          <ul>
+            <li>
+              <span class="i18n" data-lang="pt">Antes: 11.812 visualizações (0,43%) e 6.385 usuários ativos — o item menos acessado do header, apesar de estratégico</span>
+              <span class="i18n" data-lang="en" hidden>Before: 11,812 views (0.43%) and 6,385 active users — the least accessed header item, despite being strategic</span>
+            </li>
+            <li>
+              <span class="i18n" data-lang="pt">A acompanhar: variação no acesso depois do destaque maior</span>
+              <span class="i18n" data-lang="en" hidden>To track: change in access after gaining more prominence</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="metrics-card">
+          <h3>
+            <span class="i18n" data-lang="pt">Busca</span>
+            <span class="i18n" data-lang="en" hidden>Search</span>
+          </h3>
+          <ul>
+            <li>
+              <span class="i18n" data-lang="pt">Antes: 407.691 visualizações (14,67%) e 99.918 usuários ativos — já era o canal mais forte</span>
+              <span class="i18n" data-lang="en" hidden>Before: 407,691 views (14.67%) and 99,918 active users — already the strongest channel</span>
+            </li>
+            <li>
+              <span class="i18n" data-lang="pt">A acompanhar: manter o desempenho com o novo destaque, sem introduzir fricção</span>
+              <span class="i18n" data-lang="en" hidden>To track: hold that performance with the new prominence, without adding friction</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="metrics-card">
+          <h3>
+            <span class="i18n" data-lang="pt">Perfil → Acompanhamento de pedido</span>
+            <span class="i18n" data-lang="en" hidden>Profile → Order tracking</span>
+          </h3>
+          <ul>
+            <li>
+              <span class="i18n" data-lang="pt">Antes: 106.123 visualizações (3,82%) e 26.825 usuários ativos</span>
+              <span class="i18n" data-lang="en" hidden>Before: 106,123 views (3.82%) and 26,825 active users</span>
+            </li>
+            <li>
+              <span class="i18n" data-lang="pt">A acompanhar: engajamento com a nova posição de destaque</span>
+              <span class="i18n" data-lang="en" hidden>To track: engagement with the new, more prominent position</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="case-note">
+        <span class="i18n" data-lang="pt">Os números de “antes” são reais e vêm da própria tabela do Google Analytics usada na análise: falam de acesso e visualização das páginas, não de compras concluídas. A comparação antes × depois ficou sem fechamento porque saí da empresa logo após o lançamento.</span>
+        <span class="i18n" data-lang="en" hidden>The “before” numbers are real and come from the same Google Analytics table used in the analysis: they refer to page access and views, not completed purchases. The before-and-after comparison was never closed out because I left the company shortly after launch.</span>
+      </p>
+    </section>
+
+    <a class="to-top" href="#topo">
+      <span aria-hidden="true">↑</span>
+      <span class="i18n" data-lang="pt">Voltar para o topo</span>
+      <span class="i18n" data-lang="en" hidden>Back to top</span>
+    </a>
+  </main>
+
+  <footer class="footer">
+    <p>
+      &copy; <span id="year"></span> Natasha Lemos ·
+      <span class="i18n" data-lang="pt">Feito com cuidado</span>
+      <span class="i18n" data-lang="en" hidden>Made with care</span>
+    </p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

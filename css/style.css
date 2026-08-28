@@ -555,7 +555,9 @@ ol {
   margin: 1.75rem 0 0.5rem;
 }
 
-.case-section h3:first-of-type {
+/* Só zera o espaço acima quando o h3 é o primeiro elemento da seção —
+   se vier depois de um parágrafo, ele mantém o respiro. */
+.case-section > h3:first-child {
   margin-top: 0;
 }
 
@@ -704,6 +706,14 @@ ol {
 
 .metrics-card ul li::before {
   content: "— ";
+}
+
+/* Observação/ressalva no fim de uma seção do case */
+.case-note {
+  margin-top: 1.5rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--border);
+  font-size: 0.9rem;
 }
 
 /* Link "voltar ao topo" no fim do case */
