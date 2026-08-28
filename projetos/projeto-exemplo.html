@@ -28,9 +28,9 @@
   <!--
     MODELO DE PÁGINA DE PROJETO (case study)
 
-    A estrutura abaixo segue a mesma ordem dos cases em PDF:
-    Contexto → Problema → Objetivo → Meu papel → (Iniciativas) →
-    metadados (Time / Duração / Ano) → imagens → O processo → Resultado.
+    Ordem das seções:
+    metadados (Time / Duração / Ano) → Contexto → Problema → Objetivo →
+    Meu papel → (Iniciativas) → imagens → O processo → Resultado.
 
     Para adicionar um novo projeto:
     1. Duplique este arquivo e renomeie (ex: projetos/nome-do-projeto.html).
@@ -86,6 +86,36 @@
       </p>
     </header>
 
+    <!-- ====================== METADADOS ====================== -->
+    <section class="section case-meta">
+      <dl class="meta-grid">
+        <div>
+          <dt>Time</dt>
+          <dd>
+            <span class="i18n" data-lang="pt">[Composição do time]</span>
+            <span class="i18n" data-lang="en" hidden>[Team composition]</span>
+          </dd>
+        </div>
+        <div>
+          <dt>
+            <span class="i18n" data-lang="pt">Duração</span>
+            <span class="i18n" data-lang="en" hidden>Duration</span>
+          </dt>
+          <dd>
+            <span class="i18n" data-lang="pt">[Ex: 4 meses]</span>
+            <span class="i18n" data-lang="en" hidden>[e.g. 4 months]</span>
+          </dd>
+        </div>
+        <div>
+          <dt>
+            <span class="i18n" data-lang="pt">Ano</span>
+            <span class="i18n" data-lang="en" hidden>Year</span>
+          </dt>
+          <dd>[Ano]</dd>
+        </div>
+      </dl>
+    </section>
+
     <!-- ========================== CONTEXTO ========================== -->
     <section class="section case-section">
       <h2>
@@ -133,33 +163,6 @@
         <span class="i18n" data-lang="en" hidden>[Your role on the team and which deliverables you owned.]</span>
       </p>
 
-      <!-- Remova os blocos que não se aplicarem (ex: "Time", em projetos solo) -->
-      <dl class="meta-grid">
-        <div>
-          <dt>Time</dt>
-          <dd>
-            <span class="i18n" data-lang="pt">[Composição do time]</span>
-            <span class="i18n" data-lang="en" hidden>[Team composition]</span>
-          </dd>
-        </div>
-        <div>
-          <dt>
-            <span class="i18n" data-lang="pt">Duração</span>
-            <span class="i18n" data-lang="en" hidden>Duration</span>
-          </dt>
-          <dd>
-            <span class="i18n" data-lang="pt">[Ex: 4 meses]</span>
-            <span class="i18n" data-lang="en" hidden>[e.g. 4 months]</span>
-          </dd>
-        </div>
-        <div>
-          <dt>
-            <span class="i18n" data-lang="pt">Ano</span>
-            <span class="i18n" data-lang="en" hidden>Year</span>
-          </dt>
-          <dd>[Ano]</dd>
-        </div>
-      </dl>
     </section>
 
     <!-- ===== TELAS DA SOLUÇÃO (trio lado a lado; remova se não tiver) ==== -->

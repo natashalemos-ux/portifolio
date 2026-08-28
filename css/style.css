@@ -555,6 +555,16 @@ ol {
   border-bottom: 1px solid var(--border);
 }
 
+/* Faixa de metadados (Time / Duração / Ano) logo abaixo do título do case */
+.case-meta {
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+.case-meta .meta-grid {
+  margin-top: 0;
+}
+
 .meta-grid dt {
   font-size: 0.75rem;
   text-transform: uppercase;
