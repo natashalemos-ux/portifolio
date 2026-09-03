@@ -671,6 +671,52 @@ ol {
   max-width: 480px;
 }
 
+/* Par desktop + mobile lado a lado, como aparece na apresentação.
+   Cada par informa a proporção real das duas imagens em --cols, para que
+   elas fiquem alinhadas e na mesma escala. */
+.figure-pair {
+  display: grid;
+  grid-template-columns: var(--cols, 3fr 1fr);
+  gap: 1.5rem;
+  align-items: start;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+}
+
+.figure-pair figure {
+  margin: 0;
+}
+
+.figure-pair img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.figure-pair figcaption {
+  margin-top: 0.75rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+/* Nota de rodapé de uma imagem ou de um par */
+.figure-note {
+  max-width: var(--maxw);
+  margin: -3rem auto 0;
+  padding: 0 1.5rem 4rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 640px) {
+  .figure-pair {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Vídeo do case. O preload="none" no HTML faz o arquivo só baixar quando a
    pessoa aperta play — até lá aparece só a imagem de capa (poster). */
 .case-figure video {
