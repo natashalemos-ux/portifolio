@@ -665,6 +665,12 @@ ol {
   font-size: 0.85rem;
 }
 
+/* Prints de tela de celular: em retrato, ocupar a largura toda esticaria
+   demais a imagem, então essas ficam estreitas e centralizadas. */
+.case-figure--narrow {
+  max-width: 480px;
+}
+
 /* Vídeo do case. O preload="none" no HTML faz o arquivo só baixar quando a
    pessoa aperta play — até lá aparece só a imagem de capa (poster). */
 .case-figure video {
