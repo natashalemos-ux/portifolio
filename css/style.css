@@ -919,17 +919,33 @@ ol {
   font-weight: 700;
 }
 
-/* Link "voltar ao topo" no fim do case */
-.to-top {
-  display: block;
+/* Rodapé de navegação do case: voltar ao topo à esquerda,
+   próximo case à direita. */
+.case-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
   max-width: var(--maxw);
   margin: 0 auto;
   padding: 0 1.5rem 5rem;
+}
+
+.to-top,
+.next-case {
   color: var(--muted);
   font-size: 0.85rem;
   text-decoration: none;
+  white-space: nowrap;
 }
 
-.to-top:hover {
+.to-top:hover,
+.next-case:hover {
   color: var(--accent);
+}
+
+@media (max-width: 480px) {
+  .case-nav {
+    gap: 1rem;
+  }
 }
